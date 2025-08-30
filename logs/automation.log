@@ -1,0 +1,125 @@
+2025-08-30 15:47:57 [main] INFO listeners.MyTestListener::onStart::19 ==== Test Suite Started ==== 
+2025-08-30 15:47:58 [TestNG-tests-1] INFO testcases.LoginTest::setup::39 Setting up the initial configurations.. 
+2025-08-30 15:47:58 [TestNG-tests-1] INFO testcases.LoginTest::setup::86 Loading HomePage of the website.. 
+2025-08-30 15:48:00 [TestNG-tests-1] INFO pageclasses.HomePage::<init>::23 Launching Website..through Logger 
+2025-08-30 15:48:00 [TestNG-tests-1] INFO pageclasses.HomePage::gotoWebsite::200 launching website ..through loggerhttp://www.automationpractice.pl/index.php 
+2025-08-30 15:48:08 [TestNG-tests-1] INFO listeners.MyTestListener::onTestStart::38 Starting Test: loginTest_xlsx 
+2025-08-30 15:48:08 [TestNG-tests-1] INFO pageclasses.HomePage::gotoLoginPage::36 clicking on Sign in link on HomePage.. 
+2025-08-30 15:48:09 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::24 typing email id..through logger 
+2025-08-30 15:48:10 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'pramesh.cs@hotmail.com' into element: By.id: email 
+2025-08-30 15:48:10 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::26 typing password..through logger 
+2025-08-30 15:48:10 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'Password' into element: By.id: passwd 
+2025-08-30 15:48:10 [TestNG-tests-1] INFO pageclasses.LoginPage::submitCredentials::32 submitting the login credentials..through logger 
+2025-08-30 15:48:11 [TestNG-tests-1] INFO pageclasses.MyAccountPage::getLoggedinuserText::30 validating the logged in user through Assertions..through logger 
+2025-08-30 15:48:21 [TestNG-tests-1] WARN listeners.MyTestListener::onTestSkipped::75 loginTest_xlsx SKIPPED 
+2025-08-30 15:48:21 [TestNG-tests-1] INFO testcases.LoginTest::teardown::106 Quiting the browser window.. 
+2025-08-30 15:48:21 [TestNG-tests-1] INFO testcases.LoginTest::setup::39 Setting up the initial configurations.. 
+2025-08-30 15:48:21 [TestNG-tests-1] INFO testcases.LoginTest::setup::86 Loading HomePage of the website.. 
+2025-08-30 15:48:22 [TestNG-tests-1] INFO pageclasses.HomePage::<init>::23 Launching Website..through Logger 
+2025-08-30 15:48:22 [TestNG-tests-1] INFO pageclasses.HomePage::gotoWebsite::200 launching website ..through loggerhttp://www.automationpractice.pl/index.php 
+2025-08-30 15:49:10 [TestNG-tests-1] INFO listeners.MyTestListener::onTestStart::38 Starting Test: loginTest_xlsx 
+2025-08-30 15:49:10 [TestNG-tests-1] INFO pageclasses.HomePage::gotoLoginPage::36 clicking on Sign in link on HomePage.. 
+2025-08-30 15:49:12 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::24 typing email id..through logger 
+2025-08-30 15:49:12 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'pramesh.cs@hotmail.com' into element: By.id: email 
+2025-08-30 15:49:12 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::26 typing password..through logger 
+2025-08-30 15:49:13 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'Password' into element: By.id: passwd 
+2025-08-30 15:49:13 [TestNG-tests-1] INFO pageclasses.LoginPage::submitCredentials::32 submitting the login credentials..through logger 
+2025-08-30 15:49:13 [TestNG-tests-1] INFO pageclasses.MyAccountPage::getLoggedinuserText::30 validating the logged in user through Assertions..through logger 
+2025-08-30 15:49:23 [TestNG-tests-1] ERROR listeners.MyTestListener::onTestFailure::54 loginTest_xlsx FAILED 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@title='View my customer account'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.140, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\prame\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56515}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56515/devtoo..., se:cdpVersion: 139.0.7258.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c668e891c66409f470826d3f8f1c334f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.BrowserUtilities.fetchAuthMessage(BrowserUtilities.java:208)
+	at pageclasses.MyAccountPage.getLoggedinuserText(MyAccountPage.java:31)
+	at testcases.LoginTest.loginTest_xlsx(LoginTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-30 15:49:23 [TestNG-tests-1] INFO testcases.LoginTest::teardown::106 Quiting the browser window.. 
+2025-08-30 15:49:23 [TestNG-tests-1] INFO testcases.LoginTest::setup::39 Setting up the initial configurations.. 
+2025-08-30 15:49:23 [TestNG-tests-1] INFO testcases.LoginTest::setup::86 Loading HomePage of the website.. 
+2025-08-30 15:49:24 [TestNG-tests-1] INFO pageclasses.HomePage::<init>::23 Launching Website..through Logger 
+2025-08-30 15:49:24 [TestNG-tests-1] INFO pageclasses.HomePage::gotoWebsite::200 launching website ..through loggerhttp://www.automationpractice.pl/index.php 
+2025-08-30 15:49:29 [TestNG-tests-1] INFO listeners.MyTestListener::onTestStart::38 Starting Test: loginTest_xlsx 
+2025-08-30 15:49:29 [TestNG-tests-1] INFO pageclasses.HomePage::gotoLoginPage::36 clicking on Sign in link on HomePage.. 
+2025-08-30 15:49:31 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::24 typing email id..through logger 
+2025-08-30 15:49:31 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'bloggerdelhi123@gmail.com' into element: By.id: email 
+2025-08-30 15:49:31 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::26 typing password..through logger 
+2025-08-30 15:49:31 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'Password' into element: By.id: passwd 
+2025-08-30 15:49:31 [TestNG-tests-1] INFO pageclasses.LoginPage::submitCredentials::32 submitting the login credentials..through logger 
+2025-08-30 15:49:31 [TestNG-tests-1] INFO pageclasses.MyAccountPage::getLoggedinuserText::30 validating the logged in user through Assertions..through logger 
+2025-08-30 15:49:32 [TestNG-tests-1] INFO pageclasses.MyAccountPage::fetchAuthMessage::212 Fetched auth message: Parthik Verma 
+2025-08-30 15:49:32 [TestNG-tests-1] INFO listeners.MyTestListener::onTestSuccess::45 loginTest_xlsx PASSED 
+2025-08-30 15:49:32 [TestNG-tests-1] INFO testcases.LoginTest::teardown::106 Quiting the browser window.. 
+2025-08-30 15:49:32 [TestNG-tests-1] INFO testcases.SearchProductTest::setup::39 Setting up the initial configurations.. 
+2025-08-30 15:49:32 [TestNG-tests-1] INFO testcases.SearchProductTest::setup::86 Loading HomePage of the website.. 
+2025-08-30 15:49:33 [TestNG-tests-1] INFO pageclasses.HomePage::<init>::23 Launching Website..through Logger 
+2025-08-30 15:49:33 [TestNG-tests-1] INFO pageclasses.HomePage::gotoWebsite::200 launching website ..through loggerhttp://www.automationpractice.pl/index.php 
+2025-08-30 15:49:39 [TestNG-tests-1] INFO pageclasses.HomePage::gotoLoginPage::36 clicking on Sign in link on HomePage.. 
+2025-08-30 15:49:41 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::24 typing email id..through logger 
+2025-08-30 15:49:41 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'bloggerdelhi123@gmail.com' into element: By.id: email 
+2025-08-30 15:49:41 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::26 typing password..through logger 
+2025-08-30 15:49:41 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'Password' into element: By.id: passwd 
+2025-08-30 15:49:41 [TestNG-tests-1] INFO pageclasses.LoginPage::submitCredentials::32 submitting the login credentials..through logger 
+2025-08-30 15:49:42 [TestNG-tests-1] INFO listeners.MyTestListener::onTestStart::38 Starting Test: verifyproductsearchTest 
+2025-08-30 15:49:42 [TestNG-tests-1] INFO pageclasses.MyAccountPage::searchforProduct::40 searching for the product Printed Summer Dress 
+2025-08-30 15:49:42 [TestNG-tests-1] INFO pageclasses.MyAccountPage::enterText::315 Entering the text into UI > Printed Summer Dress 
+2025-08-30 15:49:42 [TestNG-tests-1] INFO pageclasses.MyAccountPage::enterSpecialKey::327 Entering the special Key  >  
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getALLVisibleText::283 Returning the text of all visible elements  
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getALLVisibleText::286 Returning list of the items. 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getVisibleText::275 Visible text from element: [[[ChromeDriver: chrome on windows (770cd50f4b03bdd09db92db4abdb7616)] -> xpath: //h5[@itemprop='name']/a]] => Printed Summer Dress 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getVisibleText::275 Visible text from element: [[[ChromeDriver: chrome on windows (770cd50f4b03bdd09db92db4abdb7616)] -> xpath: //h5[@itemprop='name']/a]] => Printed Summer Dress 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getVisibleText::275 Visible text from element: [[[ChromeDriver: chrome on windows (770cd50f4b03bdd09db92db4abdb7616)] -> xpath: //h5[@itemprop='name']/a]] => Printed Summer Dress 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getVisibleText::275 Visible text from element: [[[ChromeDriver: chrome on windows (770cd50f4b03bdd09db92db4abdb7616)] -> xpath: //h5[@itemprop='name']/a]] => Printed Summer Dress 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getVisibleText::275 Visible text from element: [[[ChromeDriver: chrome on windows (770cd50f4b03bdd09db92db4abdb7616)] -> xpath: //h5[@itemprop='name']/a]] => Printed Chiffon Dress 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getVisibleText::275 Visible text from element: [[[ChromeDriver: chrome on windows (770cd50f4b03bdd09db92db4abdb7616)] -> xpath: //h5[@itemprop='name']/a]] => Printed Chiffon Dress 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getALLVisibleText::294 Returning list of 3 items 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO listeners.MyTestListener::onTestSuccess::45 verifyproductsearchTest PASSED 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO testcases.SearchProductTest::teardown::106 Quiting the browser window.. 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO testcases.ProductCheckoutTest::setup::39 Setting up the initial configurations.. 
+2025-08-30 15:49:44 [TestNG-tests-1] INFO testcases.ProductCheckoutTest::setup::86 Loading HomePage of the website.. 
+2025-08-30 15:49:45 [TestNG-tests-1] INFO pageclasses.HomePage::<init>::23 Launching Website..through Logger 
+2025-08-30 15:49:45 [TestNG-tests-1] INFO pageclasses.HomePage::gotoWebsite::200 launching website ..through loggerhttp://www.automationpractice.pl/index.php 
+2025-08-30 15:49:52 [TestNG-tests-1] INFO pageclasses.HomePage::gotoLoginPage::36 clicking on Sign in link on HomePage.. 
+2025-08-30 15:49:53 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::24 typing email id..through logger 
+2025-08-30 15:49:54 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'bloggerdelhi123@gmail.com' into element: By.id: email 
+2025-08-30 15:49:54 [TestNG-tests-1] INFO pageclasses.LoginPage::enterCredentialsValidUser::26 typing password..through logger 
+2025-08-30 15:49:54 [TestNG-tests-1] INFO pageclasses.LoginPage::type::194 Typed text 'Password' into element: By.id: passwd 
+2025-08-30 15:49:54 [TestNG-tests-1] INFO pageclasses.LoginPage::submitCredentials::32 submitting the login credentials..through logger 
+2025-08-30 15:49:54 [TestNG-tests-1] INFO pageclasses.MyAccountPage::searchforProduct::40 searching for the product Printed Summer Dress 
+2025-08-30 15:49:54 [TestNG-tests-1] INFO pageclasses.MyAccountPage::enterText::315 Entering the text into UI > Printed Summer Dress 
+2025-08-30 15:49:55 [TestNG-tests-1] INFO pageclasses.MyAccountPage::enterSpecialKey::327 Entering the special Key  >  
+2025-08-30 15:49:56 [TestNG-tests-1] INFO listeners.MyTestListener::onTestStart::38 Starting Test: checkoutTest 
+2025-08-30 15:49:56 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getAllElements::257 Waiting for elements to be visible for locator: By.xpath: //h5[@itemprop='name']/a 
+2025-08-30 15:49:57 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getAllElements::269 Found 3 elements for locator: By.xpath: //h5[@itemprop='name']/a 
+2025-08-30 15:49:57 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getAllElements::257 Waiting for elements to be visible for locator: By.xpath: //h5[@itemprop='name']/a 
+2025-08-30 15:49:57 [TestNG-tests-1] INFO pageclasses.SearchResultPage::getAllElements::269 Found 3 elements for locator: By.xpath: //h5[@itemprop='name']/a 
+2025-08-30 15:49:57 [TestNG-tests-1] INFO pageclasses.SearchResultPage::clickon::180 clicking on webelement >  
+2025-08-30 15:50:00 [TestNG-tests-1] INFO pageclasses.ProductDetailPage::selectFromDropDown::300  selecting from drop down By.id: group_1 
+2025-08-30 15:50:00 [TestNG-tests-1] INFO pageclasses.ProductDetailPage::selectFromDropDown::303 drop down item found and selected.. By.id: group_1 
+2025-08-30 15:50:01 [TestNG-tests-1] INFO pageclasses.ProductDetailPage::selectFromDropDown::306 Drop down value selected: L 
+2025-08-30 15:50:14 [TestNG-tests-1] INFO listeners.MyTestListener::onTestSuccess::45 checkoutTest PASSED 
+2025-08-30 15:50:14 [TestNG-tests-1] INFO testcases.ProductCheckoutTest::teardown::106 Quiting the browser window.. 
+2025-08-30 15:50:15 [main] INFO listeners.MyTestListener::onFinish::25 ==== Test Suite Finished ==== 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="isHeadless" value="${isHeadless}"/>
+    <parameter name="browserName" value="chrome}"/>
+    <parameter name="isGridEnabled" value="true}"/>
+    <classes>
+      <class name="testcases.AddNewAddress_FirstTime">
+        <methods>
+          <include name="enteringFakeAddres"/>
+          <include name="initialsetup"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.AddNewAddress_FirstTime -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <parameter name="isHeadless" value="${isHeadless}"/>
+    <parameter name="browserName" value="chrome}"/>
+    <parameter name="isGridEnabled" value="true}"/>
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="loginTest_csv" invocation-numbers="1"/>
+          <include name="loginTest_xlsx" invocation-numbers="0 1"/>
+          <include name="loginTest_json" invocation-numbers="1"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->
