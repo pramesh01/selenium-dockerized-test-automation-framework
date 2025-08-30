@@ -13,9 +13,20 @@ pipeline{
             } 
              }
         stage('push image'){
+              environment{
+                DOCKER_HUB=credentials('login_credentials')
+            }
             steps{
-              bat "docker push pramesh11/selenium-docker-framework"
+              bat "docker login -u %DOCKER_HUB_USR% -p %DOCKER_HUB_PSW%"
+              bat "docker push pramesh11/selenium-docker-framework:latest"
+              bat "docker tag pramesh11/selenium-docker-framework:latest   pramesh11/selenium-docker-framework:${env.BUILD_NUMBER}"
+              bat "docker push pramesh11/selenium-docker-framework:${env.BUILD_NUMBER}"
   } 
     } 
      } 
+     post{
+        always{
+            bat "docker logout"
+        }
+     }
      }
