@@ -57,6 +57,7 @@ resources
 ```
 
 ## 🚀 **How to Run**
+```
 1. Clone the repository
 - git clone https://github.com/pramesh01/selenium-dockerized-test-automation-framework.git
 - cd selenium-ecommerce-framework
@@ -66,12 +67,14 @@ resources
 - mvn clean test
 
 3. **Run with parameters** 
-  . Headless Mode & Grid Execution:
+   > . Headless Mode & Grid Execution:
+
   - mvn clean test -DisHeadless=true -DisGridEnabled=true
 
+  **Run on Cloud [LambdaTest Environment]** 
 > **Note:** Free minutes have been exhausted on LambdaTest, so cloud execution is not demonstrated here. , 
 - But via mentioning following u can also run on cloud:
-- mvn clean test -DisLambdaTestEnabled=true
+- **mvn clean test -DisLambdaTestEnabled=true**
   [This will execute tests over LambdaTest cloud environments.]
 
 4. **Run using Docker**
@@ -83,7 +86,7 @@ resources
   These files contain image names and other execution details.
   > **Note:** Configure the Jenkins job and execute. The execution will start automatically, and reports & logs will be generated.
 ```
-## 5- **Test Cases Implemented**
+## 5. Test Cases Implemented
 
 - Register New User
 - Login Test (valid credentials)
@@ -94,7 +97,7 @@ resources
 ## 6- **📊 Reports & Logs & Screenshots on Failure**
 
 - **Extent Reports:** target/Reports/ExtentReport.html
-- **Logs:** logs/application.lo
+- **Logs:** logs/automation.log
 - **Screenshots on Failure:** Screenshots/ folder
 - **Listeners:** Automatically capture screenshots, log steps, and attach reports
 
@@ -102,6 +105,6 @@ resources
 - Will add **Allure Reports** as an alternative reporting mechanism
 - Expand test coverage with more e-commerce scenarios
 
-## 🛠️ **👨‍💻 Author:**
-**Pramesh Kumar**
-QA Automation Engineer | Selenium | Java | Docker | CI/CD | Cloud Testingselenium-dockerized-test-automation-framework
+## **👨‍💻 Author:**
+  **Pramesh Kumar**
+  - QA Automation | Selenium | Java | Docker | CI/CD | Cloud Testing
