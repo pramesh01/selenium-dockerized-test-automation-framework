@@ -1,15 +1,15 @@
-Project Name : selenium-dockerized-test-automation-framework
+# 🚀 Project Name : selenium-dockerized-test-automation-framework
 
 A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
 Features include Dockerized execution, Jenkins CI/CD pipeline, Listeners, advanced reporting (ExtentReports), and support for cross-browser parallel testing.
 
-E-commerce Automation Framework
-This project is an End-to-End Automation Framework built for the demo e-commerce website:
-**http://www.automationpractice.pl/index.php**
+## 🛒 E-commerce Automation Framework:
+- This project is an End-to-End Automation Framework built for the demo e-commerce website:
+-  **http://www.automationpractice.pl/index.php**
 
 The framework demonstrates professional test automation practices including Page Object Model (POM), data-driven testing, cross-browser execution, Listeners, Dockerized test setup, and cloud execution on LambdaTest.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - **Programming Language:** Java  
 - **Automation Tool:** Selenium WebDriver  
@@ -23,7 +23,7 @@ The framework demonstrates professional test automation practices including Page
 - **CI/CD & Containerization:** Docker, Docker Compose, Jenkins  
 - **Cloud Execution:** LambdaTest Integration  
 
-✨ Features
+## ✨ Features
 
 - **Page Object Design Pattern:** Clean and reusable code structure  
 - **Data-driven Testing:** Supports Excel, CSV, JSON  
@@ -56,16 +56,23 @@ resources
 └── log4j.properties
 ```
 
-🚀 How to Run
+## 🚀 How to Run
 1. Clone the repository
 git clone https://github.com/pramesh01/selenium-dockerized-test-automation-framework.git
 cd selenium-ecommerce-framework
 
-2. Run tests via Maven
-mvn clean test
+2. **Run tests via Maven**
 
-3. Run with parameters (headless, grid, cloud)
-mvn clean test -DisHeadless=true -DisGridEnabled=true
+- mvn clean test
+
+3. **Run with parameters** 
+  . Headless Mode & Grid Execution:
+  - mvn clean test -DisHeadless=true -DisGridEnabled=true
+
+> **Note:** Free minutes have been exhausted on LambdaTest, so cloud execution is not demonstrated here. , 
+- But via mentioning following u can also run on cloud:
+- mvn clean test -DisLambdaTestEnabled=true
+  [This will execute tests over LambdaTest cloud environments.]
 
 4. **Run using Docker**
 - Implemented test cases in a **separate repository** with a `Jenkinsfile` to run tests inside Docker containers.  
@@ -74,26 +81,27 @@ mvn clean test -DisHeadless=true -DisGridEnabled=true
   - `grid.yaml`  
   - `test_suite.yaml`  
   These files contain image names and other execution details.
-  Now Configure the Jenkins job and execute. execution will start happening. and reports logs will generate automatically.
+  > **Note:** Configure the Jenkins job and execute. The execution will start automatically, and reports & logs will be generated.
+```
+## 5- **📊 Test Cases Implemented**
 
-5- **📊 Test Cases Implemented**
+- Register New User
+- Login Test (valid credentials)
+- Login Test (For invalid credentials)
+- Search Test
+- End-to-End Checkout Flow
 
-Login Test (valid credentials)
-Login Test (For invalid credentials)
-Search Test
-End-to-End Checkout Flow
+## 6- **📊 Reports & Logs & Screenshots on Failure**
 
-6- **📊 Reports & Logs & Screenshots on Failure**
+- **Extent Reports:** target/Reports/ExtentReport.html
+- **Logs:** logs/application.lo
+- **Screenshots on Failure:** Screenshots/ folder
+- **Listeners:** Automatically capture screenshots, log steps, and attach reports
 
-Extent Reports: target/Reports/ExtentReport.html
-Logs: logs/application.lo
-Screenshots on Failure: Screenshots/ folder
-Listeners: Automatically capture screenshots, log steps, and attach reports
+**🔮 Future Enhancements**
+- Will add **Allure Reports** as an alternative reporting mechanism
+- Expand test coverage with more e-commerce scenarios
 
-🔮 Future Enhancements
-Will add Allure Reports as an alternative reporting mechanism
-Expand test coverage with more e-commerce scenarios
-
-**👨‍💻 Author:**
-Pramesh Kumar
+## 🛠️ **👨‍💻 Author:**
+**Pramesh Kumar**
 QA Automation Engineer | Selenium | Java | Docker | CI/CD | Cloud Testingselenium-dockerized-test-automation-framework
