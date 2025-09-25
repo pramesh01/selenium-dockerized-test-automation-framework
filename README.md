@@ -1,15 +1,15 @@
-# 🚀 Project Name : selenium-dockerized-test-automation-framework
+# 🚀 **Project Name :** selenium-dockerized-test-automation-framework
 
-A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
+- A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
 Features include Dockerized execution, Jenkins CI/CD pipeline, Listeners, advanced reporting (ExtentReports), and support for cross-browser parallel testing.
 
-## 🛒 E-commerce Automation Framework:
+## 🛒 **E-commerce Automation Framework:**
 - This project is an End-to-End Automation Framework built for the demo e-commerce website:
 -  **http://www.automationpractice.pl/index.php**
 
-The framework demonstrates professional test automation practices including Page Object Model (POM), data-driven testing, cross-browser execution, Listeners, Dockerized test setup, and cloud execution on LambdaTest.
+- The framework demonstrates professional test automation practices including Page Object Model (POM), data-driven testing, cross-browser execution, Listeners,   Dockerized test setup, and cloud execution on LambdaTest.
 
-## 🛠️ Tech Stack
+## 🛠️ **Tech Stack:**
 
 - **Programming Language:** Java  
 - **Automation Tool:** Selenium WebDriver  
@@ -23,7 +23,7 @@ The framework demonstrates professional test automation practices including Page
 - **CI/CD & Containerization:** Docker, Docker Compose, Jenkins  
 - **Cloud Execution:** LambdaTest Integration  
 
-## ✨ Features
+## ✨ **Features:**
 
 - **Page Object Design Pattern:** Clean and reusable code structure  
 - **Data-driven Testing:** Supports Excel, CSV, JSON  
@@ -39,7 +39,7 @@ The framework demonstrates professional test automation practices including Page
 - **Build & CI Support:** Maven Surefire Plugin for terminal/CI execution  
 - **CI/CD Integration:** Jenkins pipelines for automated test execution
 
-## 📂 Project Structure
+## 📂 Project Structure:
 ```
 src
 └── test
@@ -56,10 +56,10 @@ resources
 └── log4j.properties
 ```
 
-## 🚀 How to Run
+## 🚀 **How to Run**
 1. Clone the repository
-git clone https://github.com/pramesh01/selenium-dockerized-test-automation-framework.git
-cd selenium-ecommerce-framework
+- git clone https://github.com/pramesh01/selenium-dockerized-test-automation-framework.git
+- cd selenium-ecommerce-framework
 
 2. **Run tests via Maven**
 
@@ -83,7 +83,7 @@ cd selenium-ecommerce-framework
   These files contain image names and other execution details.
   > **Note:** Configure the Jenkins job and execute. The execution will start automatically, and reports & logs will be generated.
 ```
-## 5- **📊 Test Cases Implemented**
+## 5- **Test Cases Implemented**
 
 - Register New User
 - Login Test (valid credentials)
