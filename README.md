@@ -1,216 +1,99 @@
-selenium-dockerized-test-automation-framework
+Project Name : selenium-dockerized-test-automation-framework
 
 A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
 Features include Dockerized execution, Jenkins CI/CD pipeline, Listeners, advanced reporting (ExtentReports), and support for cross-browser parallel testing.
 
 E-commerce Automation Framework
-
 This project is an End-to-End Automation Framework built for the demo e-commerce website:
-http://www.automationpractice.pl/index.php
+**http://www.automationpractice.pl/index.php**
 
 The framework demonstrates professional test automation practices including Page Object Model (POM), data-driven testing, cross-browser execution, Listeners, Dockerized test setup, and cloud execution on LambdaTest.
 
 🛠️ Tech Stack
 
-Programming Language: Java
-Automation Tool: Selenium WebDriver
-Testing Framework: TestNG
-Build Tool: Maven
-Reporting: Extent Reports
-Logging: Log4j
-Listeners: TestNG Listeners for event-driven reporting, screenshots, and logging
-Data Sources: Excel (.xlsx), CSV, JSON
-Configuration: .properties file
-CI/CD & Containerization: Docker, Docker Compose, Jenkins
-Cloud Execution: LambdaTest Integration
+- **Programming Language:** Java  
+- **Automation Tool:** Selenium WebDriver  
+- **Testing Framework:** TestNG  
+- **Build Tool:** Maven  
+- **Reporting:** Extent Reports  
+- **Logging:** Log4j  
+- **Listeners:** TestNG Listeners for event-driven reporting, screenshots, and logging  
+- **Data Sources:** Excel (.xlsx), CSV, JSON  
+- **Configuration:** .properties file  
+- **CI/CD & Containerization:** Docker, Docker Compose, Jenkins  
+- **Cloud Execution:** LambdaTest Integration  
 
 ✨ Features
 
-Page Object Design Pattern for clean and reusable code
-Data-driven Testing (Excel, CSV, JSON)
-External Configuration via .properties files
-Headless & UI Mode Execution (parameterized)
-Selenium Grid Support for parallel and distributed execution
-Dockerized Setup with docker-compose.yml to run tests in containers
-Cloud Execution on LambdaTest with easy configuration switch
-Detailed Extent Reports with step-level logs
-Screenshot Capture on test failure (via Listeners)
-TestNG Listeners for reporting, logging, and automatic failure handling
-Log4j Logging for better debugging
-Maven Surefire Plugin integration for terminal/CI execution
-Jenkins CI/CD Integration for automated pipeline execution
+- **Page Object Design Pattern:** Clean and reusable code structure  
+- **Data-driven Testing:** Supports Excel, CSV, JSON  
+- **External Configuration:** Via `.properties` files  
+- **Execution Modes:** Headless & UI mode (parameterized)  
+- **Parallel & Distributed Testing:** Selenium Grid support  
+- **Dockerized Setup:** Run tests in containers via `docker-compose.yml`  
+- **Cloud Execution:** LambdaTest with easy configuration switch  
+- **Reporting:** Detailed Extent Reports with step-level logs  
+- **Screenshot Capture:** On test failure via TestNG Listeners  
+- **Event-driven Listeners:** TestNG Listeners for reporting, logging, automatic failure handling  
+- **Logging:** Log4j integration for better debugging  
+- **Build & CI Support:** Maven Surefire Plugin for terminal/CI execution  
+- **CI/CD Integration:** Jenkins pipelines for automated test execution
 
-📂 Project Structure
+## 📂 Project Structure
+```
 src
- └── test
-     └── java
-         ├── base        # Base classes & driver setup
-         ├── pages       # Page Object Model classes
-         ├── tests       # Test cases
-         ├── utils       # Utility classes (data readers, config, etc.)
-         └── listeners   # TestNG Listeners (screenshot, reporting, logging)
- resources
- ├── testdata           # .xlsx, .csv, .json files
- ├── config.properties
- └── log4j.properties
+└── test
+    └── java
+       ├── base # Base classes & driver setup
+       ├── pages # Page Object Model classes
+       ├── tests # Test cases
+       ├── utils # Utility classes (data readers, config, etc.)
+       └── listeners # TestNG Listeners (screenshot, reporting, logging)
+
+resources
+├── testdata # .xlsx, .csv, .json files
+├── config.properties
+└── log4j.properties
+```
 
 🚀 How to Run
 1. Clone the repository
-git clone https://github.com/username/selenium-ecommerce-framework.git
+git clone https://github.com/pramesh01/selenium-dockerized-test-automation-framework.git
 cd selenium-ecommerce-framework
 
 2. Run tests via Maven
 mvn clean test
 
 3. Run with parameters (headless, grid, cloud)
-mvn clean test -Dheadless=true -DgridEnabled=true -Dcloud=LambdaTest
+mvn clean test -DisHeadless=true -DisGridEnabled=true
 
-4. Run using Docker
-docker-compose up --build
+4. **Run using Docker**
+- Implemented test cases in a **separate repository** with a `Jenkinsfile` to run tests inside Docker containers.  
+- Repository link: [selenium-docker-runner](https://github.com/pramesh01/selenium-docker-runner.git)  
+- Additional configuration files created in this repository:  
+  - `grid.yaml`  
+  - `test_suite.yaml`  
+  These files contain image names and other execution details.
+  Now Configure the Jenkins job and execute. execution will start happening. and reports logs will generate automatically.
 
-🧪 Implemented Test Cases
+5- **📊 Test Cases Implemented**
 
 Login Test (valid credentials)
-Login Test (invalid user)
+Login Test (For invalid credentials)
 Search Test
 End-to-End Checkout Flow
 
-📊 Reports & Logs
+6- **📊 Reports & Logs & Screenshots on Failure**
 
-Extent Reports: target/ExtentReports/ExtentReport.html
+Extent Reports: target/Reports/ExtentReport.html
 Logs: logs/application.lo
-Screenshots on Failure: screenshots/ folder
+Screenshots on Failure: Screenshots/ folder
 Listeners: Automatically capture screenshots, log steps, and attach reports
 
 🔮 Future Enhancements
 Will add Allure Reports as an alternative reporting mechanism
 Expand test coverage with more e-commerce scenarios
 
-
-👨‍💻 Author
-
+**👨‍💻 Author:**
 Pramesh Kumar
 QA Automation Engineer | Selenium | Java | Docker | CI/CD | Cloud Testingselenium-dockerized-test-automation-framework
-
-A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
-Features include Dockerized execution, Jenkins CI/CD pipeline, Listeners, advanced reporting (ExtentReports), and support for cross-browser parallel testing.
-
-E-commerce Automation Framework
-
-This project is an End-to-End Automation Framework built for the demo e-commerce website:
-http://www.automationpractice.pl/index.php
-
-The framework demonstrates professional test automation practices including Page Object Model (POM), data-driven testing, cross-browser execution, Listeners, Dockerized test setup, and cloud execution on LambdaTest.
-
-🛠️ Tech Stack
-
-Programming Language: Java
-
-Automation Tool: Selenium WebDriver
-
-Testing Framework: TestNG
-
-Build Tool: Maven
-
-Reporting: Extent Reports
-
-Logging: Log4j
-
-Listeners: TestNG Listeners for event-driven reporting, screenshots, and logging
-
-Data Sources: Excel (.xlsx), CSV, JSON
-
-Configuration: .properties file
-
-CI/CD & Containerization: Docker, Docker Compose, Jenkins
-
-Cloud Execution: LambdaTest Integration
-
-✨ Features
-
-Page Object Design Pattern for clean and reusable code
-
-Data-driven Testing (Excel, CSV, JSON)
-
-External Configuration via .properties files
-
-Headless & UI Mode Execution (parameterized)
-
-Selenium Grid Support for parallel and distributed execution
-
-Dockerized Setup with docker-compose.yml to run tests in containers
-
-Cloud Execution on LambdaTest with easy configuration switch
-
-Detailed Extent Reports with step-level logs
-
-Screenshot Capture on test failure (via Listeners)
-
-TestNG Listeners for reporting, logging, and automatic failure handling
-
-Log4j Logging for better debugging
-
-Maven Surefire Plugin integration for terminal/CI execution
-
-Jenkins CI/CD Integration for automated pipeline execution
-
-📂 Project Structure
-src
- └── test
-     └── java
-         ├── base        # Base classes & driver setup
-         ├── pages       # Page Object Model classes
-         ├── tests       # Test cases
-         ├── utils       # Utility classes (data readers, config, etc.)
-         └── listeners   # TestNG Listeners (screenshot, reporting, logging)
- resources
- ├── testdata           # .xlsx, .csv, .json files
- ├── config.properties
- └── log4j.properties
-
-🚀 How to Run
-1. Clone the repository
-git clone https://github.com/username/selenium-ecommerce-framework.git
-cd selenium-ecommerce-framework
-
-2. Run tests via Maven
-mvn clean test
-
-3. Run with parameters (headless, grid, cloud)
-mvn clean test -Dheadless=true -DgridEnabled=true -Dcloud=LambdaTest
-
-4. Run using Docker
-docker-compose up --build
-
-🧪 Implemented Test Cases
-
-Login Test (valid credentials)
-
-Login Test (invalid user)
-
-Search Test
-
-End-to-End Checkout Flow
-
-📊 Reports & Logs
-
-Extent Reports: target/ExtentReports/ExtentReport.html
-
-Logs: logs/application.log
-
-Screenshots on Failure: screenshots/ folder
-
-Listeners: Automatically capture screenshots, log steps, and attach reports
-
-🔮 Future Enhancements
-
-Add Allure Reports as an alternative reporting mechanism
-
-Expand test coverage with more e-commerce scenarios
-
-Integrate with additional cloud providers (BrowserStack, Saucelabs)
-
-👨‍💻 Author
-
-Pramesh Kumar
-QA Automation Engineer | Selenium | Java | Docker | CI/CD | Cloud Testing
