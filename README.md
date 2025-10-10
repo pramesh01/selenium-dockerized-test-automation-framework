@@ -1,5 +1,14 @@
 # 🚀 **Project Name :** selenium-dockerized-test-automation-framework
 
+![Java](https://img.shields.io/badge/Java-11+-blue)
+![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green)
+![TestNG](https://img.shields.io/badge/TestNG-Testing-orange)
+![Maven](https://img.shields.io/badge/Maven-Build-red)
+![Docker](https://img.shields.io/badge/Docker-Container-blue)
+![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-blueviolet)
+![LambdaTest](https://img.shields.io/badge/LambdaTest-Cloud-lightgrey)
+![ExtentReports](https://img.shields.io/badge/ExtentReports-HTML-yellow)
+
 - A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
 Features include Dockerized execution, Jenkins CI/CD pipeline, Listeners, advanced reporting (ExtentReports), and support for cross-browser parallel testing.
 
@@ -100,6 +109,14 @@ resources
 - **Logs:** logs/automation.log
 - **Screenshots on Failure:** Screenshots/ folder
 - **Listeners:** Automatically capture screenshots, log steps, and attach reports
+
+### Sample ExtentReport Screenshots
+
+**Passed Test Cases Report**
+![ExtentReport Passed](Screenshots/extent_report-pass.png)
+
+**Failed Test Cases Report**
+![ExtentReport Failed](Screenshots/extentReports_Failed-Tests.png)
 
 **🔮 Future Enhancements**
 - Will add **Allure Reports** as an alternative reporting mechanism

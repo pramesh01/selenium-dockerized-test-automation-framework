@@ -14,3 +14,7 @@ result/
 
 # Backup files
 *.bak
+
+# Exceptions: track Screenshots folder and PNG files
+!Screenshots/
+!Screenshots/*.png
