@@ -1,13 +1,14 @@
 # 🚀 **Project Name :** selenium-dockerized-test-automation-framework
 
-![Java](https://img.shields.io/badge/Java-11+-blue)
-![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green)
-![TestNG](https://img.shields.io/badge/TestNG-Testing-orange)
-![Maven](https://img.shields.io/badge/Maven-Build-red)
-![Docker](https://img.shields.io/badge/Docker-Container-blue)
-![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-blueviolet)
-![LambdaTest](https://img.shields.io/badge/LambdaTest-Cloud-lightgrey)
-![ExtentReports](https://img.shields.io/badge/ExtentReports-HTML-yellow)
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Selenium WebDriver](https://img.shields.io/badge/Selenium%20WebDriver-%2343B02A.svg?style=for-the-badge&logo=selenium&logoColor=white)
+![TestNG](https://img.shields.io/badge/TestNG-%23FF6F00.svg?style=for-the-badge&logo=testng&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-%23C71A36.svg?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Docker Containerization](https://img.shields.io/badge/Docker%20Containerization-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Jenkins CI/CD](https://img.shields.io/badge/Jenkins%20CI%2FCD-%23D24939.svg?style=for-the-badge&logo=jenkins&logoColor=white)
+![Cloud Testing – LambdaTest](https://img.shields.io/badge/Cloud%20Testing%20–%20LambdaTest-%2300ADEF.svg?style=for-the-badge&logo=testing-library&logoColor=white)
+![ExtentReports](https://img.shields.io/badge/ExtentReports-%230072C6.svg?style=for-the-badge&logo=report&logoColor=white)
+
 
 - A robust automation framework built on Selenium, Java, and TestNG with Page Object Model (POM).
 Features include Dockerized execution, Jenkins CI/CD pipeline, Listeners, advanced reporting (ExtentReports), and support for cross-browser parallel testing.
@@ -119,6 +120,8 @@ resources
 ![ExtentReport Failed](Screenshots/extentReports_Failed-Tests.png)
 
 **🔮 Future Enhancements**
+- will Enhance ExtentReports by replacing raw technical logs (e.g., “Clicked on element: By.xpath: //a[@title='Proceed to checkout']”) with clean, human-readable test steps, like “Clicked on Proceed to Checkout button”, along with inline screenshots for each step.
+- Additionally, i will integrate Docker-based video recording to capture the entire test execution flow for better debugging and visual analysis.
 - Will add **Allure Reports** as an alternative reporting mechanism
 - Expand test coverage with more e-commerce scenarios
 
