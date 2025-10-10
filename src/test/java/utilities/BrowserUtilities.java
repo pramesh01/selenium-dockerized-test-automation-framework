@@ -246,6 +246,15 @@ public class BrowserUtilities {
 		    ExtentReportUtility.getTest().info("Fetched visible text: <b>" + webElement.getText() + "</b>");
 		    return webElement.getText();
 	}
+	
+	public String getVisibleText(WebElement element) {
+		String text = element.getText().trim();
+		logger.info("Visible text from element: [" + element + "] => " + text);
+	    // Log to Extent Report
+	    ExtentReportUtility.getTest().info("Fetched visible text: <b>" + text + "</b>");
+		//return element.getText();
+	    return text;
+	}
 
 	public List<WebElement> getAllElements(By locator) {
 		/*
@@ -268,15 +277,6 @@ public class BrowserUtilities {
 		List<WebElement> allWebElement = driver.get().findElements(locator);
 		logger.info("Found " + allWebElement.size() + " elements for locator: " + locator);
 		return allWebElement;
-	}
-
-	public String getVisibleText(WebElement element) {
-		String text = element.getText().trim();
-		logger.info("Visible text from element: [" + element + "] => " + text);
-	    // Log to Extent Report
-	    ExtentReportUtility.getTest().info("Fetched visible text: <b>" + text + "</b>");
-		//return element.getText();
-	    return text;
 	}
 
 	public List<String> getALLVisibleText(By locator) {

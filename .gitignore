@@ -1,0 +1,16 @@
+# Maven
+target/
+
+# IDE files
+.settings/
+.classpath
+.project
+
+# Logs and screenshots
+test-output/
+Screenshots/
+logs/
+result/
+
+# Backup files
+*.bak
